@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Articles - Sona Manukyan Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Styling the Top Navigation Bar */
+			#top-nav {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: rgba(0, 0, 0, 0.8);
+				color: #fff;
+				z-index: 1000;
+				padding: 10px 0;
+			}
+			#top-nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			#top-nav .nav-links {
+				display: flex;
+				gap: 20px;
+			}
+			#top-nav .nav-links a {
+				text-decoration: none;
+				color: #fff;
+				font-weight: bold;
+				transition: background-color 0.3s, color 0.3s;
+				padding: 8px 15px;
+				border: 2px solid #fff;
+				border-radius: 5px;
+			}
+			#top-nav .nav-links a.active {
+				background-color: #add8e6;
+				color: #000;
+			}
+			#top-nav .nav-links a:hover {
+				background-color: #add8e6;
+				color: #000;
+			}
+			#top-nav .social-icons {
+				display: flex;
+				gap: 15px;
+			}
+			#top-nav .social-icons a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 20px;
+				transition: color 0.3s;
+			}
+			#top-nav .social-icons a:hover {
+				color: #f39c12;
+			}
+			/* Add padding to main content to avoid overlap with fixed navbar */
+			#main {
+				padding-top: 70px;
+			}
+			/* Reduced Image Sizes for Projects */
+			.work-item img {
+				width: 300px;
+				height: 200px;
+				border-radius: 10px;
+				object-fit: cover;
+				margin: 0 auto;
+				display: block;
+			}
+			.work-item {
+				text-align: center;
+			}
+			.work-item h3 {
+				font-size: 18px;
+				margin: 10px 0;
+			}
+			.work-item p {
+				font-size: 14px;
+				color: #666;
+			}
+			.work-item a.learn-more {
+				display: inline-block;
+				color: #3498db;
+				text-decoration: none;
+				font-weight: bold;
+				margin-top: 5px;
+				transition: color 0.3s;
+			}
+			.work-item a.learn-more:hover {
+				color: #1d6fa5;
+				text-decoration: underline;
+			}
+			/* Styling the descriptive text */
+			.description {
+				text-align: center;
+				font-size: 16px;
+				color: #444;
+				font-style: italic;
+				line-height: 1.6;
+				margin-bottom: 40px;
+			}
+			/* Updated Summary Under Avatar */
+			#header .description p {
+				font-size: 20px;
+				color: #fff;
+				font-weight: bold;
+				margin: 20px 0;
+			}
+			/* Increased Text Size for Main Description */
+			#main .description p {
+				font-size: 18px;
+				margin-top: 30px;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Top Navigation Bar -->
+		<div id="top-nav">
+			<div class="container">
+				<!-- Navigation Links -->
+				<div class="nav-links">
+					<a href="index.html">About</a>
+					<a href="machinelearning.html">Projects</a>
+					<a href="articles.html" class="active">Articles</a>
+				</div>
+				<!-- Social Icons -->
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/sonamanukyan/" class="icon brands fa-linkedin" target="_blank"></a>
+					<a href="https://medium.com/@sonamanukyan" class="icon brands fa-medium" target="_blank"></a>
+					<a href="https://github.com/sonamanukyan92" class="icon brands fa-github" target="_blank"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<!-- Logo and Welcome Text -->
+					<a class="image avatar"><img src="images/avatar.jpg" alt="Avatar" /></a>
+					<section class="description"><p>Bringing data to life through statistics, machine learning, and visualization, with a focus on actionable insights, impactful storytelling, and practical applications in the data science field.</p></section>
+				</div>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Descriptive Text Section -->
+				<section class="description">
+					<p>From the foundational principles of statistics, 
+						including probability theory and hypothesis testing, to advanced data visualization techniques that transform 
+						raw data into compelling visual stories, my articles cover a broad spectrum of topics. <br>Additionally, they delve 
+						into the intricacies of machine learning algorithms, exploring both supervised and unsupervised learning, as well as 
+						model evaluation and optimization. Each article aims to share valuable insights, best practices, and practical applications, 
+						offering a comprehensive view of the data science field. Find out more on my <a href="https://medium.com/@sonamanukyan" target="_blank">Medium page</a>.</p>
+				</section>			
+
+				<!-- Articles Section -->
+				<section id="articles">
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/the-sampling-bias-a755b35902bd" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/sample.jpg" alt="Sampling Bias" />
+							</a>
+							<h3>Mastering Sampling Techniques</h3>
+							<p>Explore how to choose between random and stratified sampling to ensure accurate research results and mitigate sampling bias effectively.</p>
+							<a href="https://medium.com/@sonamanukyan/the-sampling-bias-a755b35902bd" class="learn-more">Read More</a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/forecasting-sales-with-prophet-a-data-driven-guide-to-smarter-decisions-dbe9034992c6" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/prophet.jpg" alt="Forecasting Sales with Prophet" />
+							</a>
+							<h3>Forecasting Sales with Prophet: A Data-Driven Guide to Smarter Decisions</h3>
+							<p>This article outlines the steps and strategies for building accurate and actionable time-series forecasting models with Prophet. It covers data preparation, managing seasonality, integrating external regressors, and fine-tuning predictions to support business decision-making.</p>
+							<a href="https://medium.com/@sonamanukyan/forecasting-sales-with-prophet-a-data-driven-guide-to-smarter-decisions-dbe9034992c6" class="learn-more">Read More</a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/how-to-become-a-data-scientist-a-comprehensive-guide-dcb973cf43fc" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/Picsart.jpg" alt="Becoming a Data Scientist" />
+							</a>
+							<h3>Becoming a Data Scientist: A Comprehensive Guide</h3>
+							<p>This article outlines the steps and strategies to start a journey toward becoming a data scientist from scratch. It covers essential foundations, hands-on practice, and specialization in machine learning and big data.</p>
+							<a href="https://medium.com/@sonamanukyan/how-to-become-a-data-scientist-a-comprehensive-guide-dcb973cf43fc" class="learn-more">Read More</a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/essential-reads-for-data-storytelling-crafting-narratives-with-numbers-fa56e45b28c5" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/books.jpg" alt="Becoming a Data Scientist" />
+							</a>
+							<h3>Transform Data into Impactful Stories: Must-Read Books on Data Storytelling</h3>
+							<p>This article highlights essential books to elevate your data storytelling skills. It covers frameworks, practical tips, and hands-on exercises to transform raw data into compelling narratives that educate, engage, and inspire action for real-world impact.</p>
+							<a href="https://medium.com/@sonamanukyan/essential-reads-for-data-storytelling-crafting-narratives-with-numbers-fa56e45b28c5" class="learn-more">Read More</a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/power-bi-vs-tableau-which-one-should-you-choose-for-financial-analysis-6a462b5a8b1c" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/powerbi.jpg" alt="Power BI vs. Tableau" />
+							</a>
+							<h3>Power BI vs. Tableau: Which One Should You Choose for Financial Analysis?</h3>
+							<p>Compare Power BI and Tableau, focusing on their suitability for financial analysis, data connectivity, and ease of use to help decide which aligns with your needs.</p>
+							<a href="https://medium.com/@sonamanukyan/power-bi-vs-tableau-which-one-should-you-choose-for-financial-analysis-6a462b5a8b1c" class="learn-more">Read More</a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/tableaus-level-of-detail-lod-expressions-4f0bf4d4273d" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/level.jpg" alt="Tableau LOD Expressions" />
+							</a>
+							<h3>Tableau’s Level of Detail (LOD) Expressions</h3>
+							<p>Understand the power of LOD expressions in Tableau, essential for creating more complex and insightful data visualizations.</p>
+							<a href="https://medium.com/@sonamanukyan/tableaus-level-of-detail-lod-expressions-4f0bf4d4273d" class="learn-more">Read More</a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/the-machine-learning-project-checklist-3bb8f3eb5ddf" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/checklist.jpg" alt="Machine Learning Checklist" />
+							</a>
+							<h3>The Machine Learning Project Checklist</h3>
+							<p>A step-by-step guide covering all phases of a machine learning project, from scoping to deployment, ensuring best practices and success.</p>
+							<a href="https://medium.com/@sonamanukyan/the-machine-learning-project-checklist-3bb8f3eb5ddf" class="learn-more">Read More</a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://medium.com/@sonamanukyan/10-essential-skills-for-data-scientists-in-business-9d0effd07d0b" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/top10skills.jpg" alt="10 Essential Skills for Data Scientists" />
+							</a>
+							<h3>10 Essential Skills for Data Scientists in Business</h3>
+							<p>Learn about the top skills every data scientist should have to excel in business, from machine learning to domain knowledge and problem-solving.</p>
+							<a href="https://medium.com/@sonamanukyan/10-essential-skills-for-data-scientists-in-business-9d0effd07d0b" class="learn-more">Read More</a>
+						</article>
+					</div>
+				</section>			
+
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

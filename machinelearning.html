@@ -1,213 +1,290 @@
 <!DOCTYPE HTML>
-<!--
-	Medium Articles by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Machine Learning and Visualizations</title>
+		<title>Projects - Sona Manukyan Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Styling the Top Navigation Bar */
+			#top-nav {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: rgba(0, 0, 0, 0.8);
+				color: #fff;
+				z-index: 1000;
+				padding: 10px 0;
+			}
+			#top-nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			#top-nav .nav-links {
+				display: flex;
+				gap: 20px;
+			}
+			#top-nav .nav-links a {
+				text-decoration: none;
+				color: #fff;
+				font-weight: bold;
+				transition: background-color 0.3s, color 0.3s;
+				padding: 8px 15px;
+				border: 2px solid #fff;
+				border-radius: 5px;
+			}
+			#top-nav .nav-links a.active {
+				background-color: #add8e6;
+				color: #000;
+			}
+			#top-nav .nav-links a:hover {
+				background-color: #add8e6;
+				color: #000;
+			}
+			#top-nav .social-icons {
+				display: flex;
+				gap: 15px;
+			}
+			#top-nav .social-icons a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 20px;
+				transition: color 0.3s;
+			}
+			#top-nav .social-icons a:hover {
+				color: #f39c12;
+			}
+			/* Add padding to main content to avoid overlap with fixed navbar */
+			#main {
+				padding-top: 70px;
+			}
+			/* Reduced Image Sizes for Projects */
+			.work-item img {
+				width: 300px;
+				height: 200px;
+				border-radius: 10px;
+				object-fit: cover;
+				margin: 0 auto;
+				display: block;
+			}
+			.work-item {
+				text-align: center;
+			}
+			.work-item h3 {
+				font-size: 18px;
+				margin: 10px 0;
+			}
+			.work-item p {
+				font-size: 14px;
+				color: #666;
+			}
+			.work-item a.learn-more {
+				display: inline-block;
+				color: #3498db;
+				text-decoration: none;
+				font-weight: bold;
+				margin-top: 5px;
+				transition: color 0.3s;
+			}
+			.work-item a.learn-more:hover {
+				color: #1d6fa5;
+				text-decoration: underline;
+			}
+			/* Styling the descriptive text */
+			.description {
+				text-align: center;
+				font-size: 16px;
+				color: #444;
+				font-style: italic;
+				line-height: 1.6;
+				margin-bottom: 40px;
+			}
+			/* Updated Summary Under Avatar */
+			#header .description p {
+				font-size: 20px;
+				color: #fff;
+				font-weight: bold;
+				margin: 20px 0;
+			}
+			/* Increased Text Size for Main Description */
+			#main .description p {
+				font-size: 18px;
+				margin-top: 30px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
+		<!-- Top Navigation Bar -->
+		<div id="top-nav">
+			<div class="container">
+				<!-- Navigation Links -->
+				<div class="nav-links">
+					<a href="index.html">About</a>
+					<a href="machinelearning.html" class="active">Projects</a>
+					<a href="articles.html">Articles</a>
+				</div>
+				<!-- Social Icons -->
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/sonamanukyan/" class="icon brands fa-linkedin" target="_blank"></a>
+					<a href="https://medium.com/@sonamanukyan" class="icon brands fa-medium" target="_blank"></a>
+					<a href="https://github.com/sonamanukyan92" class="icon brands fa-github" target="_blank"></a>
+				</div>
+			</div>
+		</div>
+
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h3 style="font-style: italic;">Sona Manukyan <br> Professional portfolio</h3>
-						<p style="max-width: 1300px; margin: 0 auto; font-style: italic;">The Python projects in this portfolio showcase a wide range of data science techniques, 
-							including data cleaning, predictive modeling, NLP, decision trees, random forest models, linear regression, and clustering algorithms. These projects 
-							demonstrate Python's effectiveness in solving complex problems and contributing to data-driven decision-making. <br>The visualizations in this portfolio 
-							were created using Tableau and Power BI. They transform raw data into clear and interactive visual stories, ranging from simple charts to complex 
-							dashboards. This makes it easy to grasp trends and insights at a glance.</p>
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<!-- Logo and Welcome Text -->
+					<a class="image avatar"><img src="images/avatar.jpg" alt="Avatar" /></a>
+					<section class="description"><p>Leveraging expertise in Python, Tableau, and Power BI to create impactful data-driven solutions with a strong emphasis on analytics, storytelling, and actionable visual insights.</p></section>
+				</div>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Descriptive Text Section -->
+				<section class="description">
+					<p>The Python projects in this portfolio showcase a wide range of data science techniques, 
+					including data cleaning, predictive modeling, NLP, decision trees, random forest models, linear regression, and clustering algorithms. These projects 
+					demonstrate Python's effectiveness in solving complex problems and contributing to data-driven decision-making. The visualizations in this portfolio were created using Tableau and Power BI. They transform raw data into clear and interactive visual stories, ranging from simple charts to complex 
+					dashboards. This makes it easy to grasp trends and insights at a glance.</p>
+				</section>			
+
+				<!-- Projects Section -->
+				<section id="two">
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/cat_vs_dog/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/cat_vs_dog.JPG" width="400px" height="250px" alt="Cats and Dogs Visualization" />
+							</a>
+							<h3>Cats and Dogs Popularity Visualization using Plotly</h3>
+							<p>Do you own a pet? Here is a visualization that shows how much pets are loved in the US!</p>
+							<a href="https://sonamanukyan92.github.io/cat_vs_dog/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/supervised-learning-algorithms-on-the-diabetes-dataset/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/diabetes_pred.JPG" width="400px" height="250px" alt="Diabetes Data Analysis" />
+							</a>
+							<h3>Diabetes Data Analysis using Python</h3>
+							<p>To predict a patient’s risk of getting diabetes in an early stage, I used various machine learning models and achieved up to 96% prediction accuracy.</p>
+							<a href="https://sonamanukyan92.github.io/supervised-learning-algorithms-on-the-diabetes-dataset/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://public.tableau.com/app/profile/sona6115/viz/DiabetesDataVisualization_16367610008020/diabetes_viz?publish=yes" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/diabetes_viz.JPG" width="400px" height="250px" alt="Diabetes Visualization in Tableau" />
+							</a>
+							<h3>Diabetes Data Visualization with Tableau</h3>
+							<p>Visualization of Diabetes Data (age distribution, gender, and various symptoms which are common for diabetes patients).</p>
+							<a href="https://public.tableau.com/app/profile/sona6115/viz/DiabetesDataVisualization_16367610008020/diabetes_viz?publish=yes" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/vaccination/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/03.png" width="400px" height="250px" alt="Vaccination Rates Visualization" />
+							</a>
+							<h3>Vaccination Rates and GDP per capita using Python Plotly</h3>
+							<p>I examined the relationship between GDP per capita, HDI, and the Vaccination Rates of COVID-19 for each country.</p>
+							<a href="https://sonamanukyan92.github.io/vaccination/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/covid-19-spread-visualization/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/02.jpg" width="400px" height="250px" alt="Covid Spread Visualization" />
+							</a>
+							<h3>Covid Spread Visualization using Python Plotly</h3>
+							<p>Visualization of COVID-19 spread, the impact analysis by continents and by countries.</p>
+							<a href="https://sonamanukyan92.github.io/covid-19-spread-visualization/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/movie_similarity_detection/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/movie_similarity.JPG" width="400px" height="250px" alt="Movie Similarity Detection" />
+							</a>
+							<h3>Movie Similarity Detection using Natural Language Processing (NLP) and K-Means Clustering</h3>
+							<p>I quantified the similarity of movies based on their plot summaries available on IMDb and Wikipedia using NLP and clustering techniques.</p>
+							<a href="https://sonamanukyan92.github.io/movie_similarity_detection/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://public.tableau.com/app/profile/sona6115/viz/The2014Inc_5000_16336163015670/The2014Inc_5000" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/Inc5000.JPG" width="400px" height="250px" alt="Inc 5000 Visualization" />
+							</a>
+							<h3>The 2014 Inc.5000 Data Visualization with Tableau</h3>
+							<p>I analyzed business trends such as revenue, employee counts, and growth rates to draw insights using Tableau visualizations.</p>
+							<a href="https://public.tableau.com/app/profile/sona6115/viz/The2014Inc_5000_16336163015670/The2014Inc_5000" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/Word-Frequency-in-Classic-Novels/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/word_freq_in_book.JPG" width="400px" height="250px" alt="Word Frequency Analysis" />
+							</a>
+							<h3>Book's Word Frequency Analysis</h3>
+							<p>This project uses NLP techniques to analyze and visualize word frequency distributions in classic novels.</p>
+							<a href="https://sonamanukyan92.github.io/Word-Frequency-in-Classic-Novels/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/disney_movies_and_box_office_success/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/disney_movie_success.JPG" width="400px" height="250px" alt="Disney Movies Box Office Success" />
+							</a>
+							<h3>Disney Movies Box Office Success Analysis</h3>
+							<p>I analyzed box office trends using linear regression to identify popular genres for future Disney productions.</p>
+							<a href="https://sonamanukyan92.github.io/disney_movies_and_box_office_success/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/credit_card_approval_prediction/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/credit_card_approval.JPG" width="400px" height="250px" alt="Credit Card Approvals Prediction" />
+							</a>
+							<h3>Predicting Credit Card Approvals with Machine Learning</h3>
+							<p>I implemented logistic regression and hyperparameter tuning to achieve 85% prediction accuracy for automating credit card approvals.</p>
+							<a href="https://sonamanukyan92.github.io/credit_card_approval_prediction/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/runkeeper_fitness_data_analysis/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/fitness_data.JPG" width="400px" height="250px" alt="Fitness Data Analysis" />
+							</a>
+							<h3>Fitness Data Analysis with Python Statsmodels</h3>
+							<p>This project includes visualizing running statistics and analyzing fitness progress over time.</p>
+							<a href="https://sonamanukyan92.github.io/runkeeper_fitness_data_analysis/" class="learn-more">Learn More</a>
+						</article>
+				
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://sonamanukyan92.github.io/The-Android-App-Market-on-Google-Play/" target="_blank" rel="noopener noreferrer">
+								<img src="images/thumbs/android_app_market.JPG" width="400px" height="250px" alt="Android App Market Analysis" />
+							</a>
+							<h3>The Android App Market on Google Play</h3>
+							<p>I analyzed Android app market data, exploring factors such as category, reviews, price, and installs to uncover trends.</p>
+							<a href="https://sonamanukyan92.github.io/The-Android-App-Market-on-Google-Play/" class="learn-more">Learn More</a>
+						</article>
 					</div>
-
-			
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">About</a></li>
-							<li class="active"><a href="machinelearning.html">Projects in Python and Tableau</a></li>
-							<li><a href="medium.html">Medium Articles</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/sonamanukyan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://medium.com/@sonamanukyan" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-							<li><a href="https://github.com/sonamanukyan92" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a>Cats and Dogs Popularity Visualization using Plotly</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/cat_vs_dog.JPG" alt="" /></a>
-									<p>Are you a pet owner? This visualization highlights the extent of pet ownership and affection across the US, illustrating just how much pets are cherished nationwide.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/cat_vs_dog/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>Predicting Credit Card Approvals with Machine Learning</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/credit_card_approval.JPG" alt="" /></a>
-									<p>Logistic Regression was implemented to automate the credit card approval process. Through the application of the Grid Search technique for hyperparameter tuning, an 85% prediction accuracy was achieved. This approach optimizes the model's performance, ensuring more reliable and efficient credit card approval decisions.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/credit_card_approval_prediction/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a>Diabetes Data Visualization with Tableau</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/diabetes_viz.JPG" alt="" /></a>
-									<p>This project involves the visualization of diabetes data, focusing on key demographic and clinical factors. The analysis includes the age distribution of patients, highlighting how diabetes prevalence varies across different age groups. Additionally, it examines the gender distribution, providing insights into any disparities between male and female patients. The visualization also covers a range of common symptoms associated with diabetes, offering a comprehensive overview of the typical clinical presentations observed in diabetic individuals. This detailed visualization aids in understanding the demographics and symptoms prevalent among diabetes patients, contributing to better-informed healthcare strategies.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/sona6115/viz/DiabetesDataVisualization_16367610008020/diabetes_viz?publish=yes" class="button">Full Story</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										<h2><a>The 2014 Inc.5000 Data Visualization with Tableau</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/Inc5000.JPG" alt="" /></a>
-									<p>The analysis addresses questions such as: Which state is home to the company with the largest revenue? What is the revenue of the lowest-ranked company on the list? Which companies have the most and the fewest employees? How many companies experienced less than 100% growth over the four-year period? What insights can be drawn from a marketing or sales perspective?</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/sona6115/viz/DiabetesDataVisualization_16367610008020/diabetes_viz?publish=yes" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>Fitness Data Analysis with Python Statsmodels</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/fitness_data.JPG" alt="" /></a>
-									<p>This project involves the data visualization of running statistics and progress analysis. It includes visual representations of various metrics such as distance covered, pace, and duration over time. By analyzing these visualizations, one can track performance improvements, identify trends, and gain insights into training effectiveness. This comprehensive visualization provides a clear overview of running progress, helping to make informed decisions for future training plans.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/runkeeper_fitness_data_analysis/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>Disney Movies Box Office Success Analysis using Linear Regression</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/disney_movie_success.JPG" alt="" /></a>
-									<p>To determine whether Disney should produce more action and adventure movies, an analysis was conducted on the box office success statistics of Disney films. Using libraries such as NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn, the project involved examining trends and patterns in movie performance. This predictive analysis aimed to identify which genres are likely to succeed in the future, providing strategic insights for Disney's movie production decisions.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/disney_movies_and_box_office_success/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>The Android App Market on Google Play</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/android_app_market.JPG" alt="" /></a>
-									<p>The analysis was conducted on the Android app market data, examining various factors such as category, rating, reviews, size, installs, type, price, and genre. This comprehensive study aimed to uncover trends and patterns within the app market, providing valuable insights into the characteristics that contribute to app success and user engagement.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/The-Android-App-Market-on-Google-Play/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										
-										<h2><a>Diabetes Data Analysis (Scikit Learn, Numpy, Pandas, Matplotlib, Seaborn)</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/diabetes_pred.JPG" alt="" /></a>
-									<p>To predict a patient's risk of developing diabetes at an early stage, various machine learning models were employed. Through rigorous testing and optimization, these models achieved up to 96% prediction accuracy. This high level of accuracy demonstrates the potential for early intervention and improved patient outcomes through the use of advanced machine learning techniques.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/supervised-learning-algorithms-on-the-diabetes-dataset/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>Vaccination Rates and GDP per capita with Plotly</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/03.png" alt="" /></a>
-									<p>An analysis was conducted to examine the relationship between GDP per capita, Human Development Index (HDI), and COVID-19 vaccination rates across various countries. This study aimed to uncover how economic and developmental factors influence the rate of vaccination, providing insights into global health disparities and the effectiveness of vaccination campaigns.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/vaccination/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>Covid Spread Visualization with Plotly</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/02.jpg" alt="" /></a>
-									<p>This project involves the visualization of the spread of COVID-19, accompanied by an impact analysis broken down by continents and individual countries. The visualizations provide a comprehensive overview of the pandemic's progression, highlighting key metrics such as infection rates, recovery rates, and mortality rates. By analyzing the data on both continental and national levels, this project aims to offer insights into the varying impacts of COVID-19 across different regions and to understand the effectiveness of containment measures worldwide.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/covid-19-spread-visualization/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>Movie Similarity Detection using Natural Language Processing (NLP) and K-Means Clustering with Python</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/movie_similarity.JPG" alt="" /></a>
-									<p>In this analysis, the similarity of movies was quantified based on their plot summaries available on IMDb and Wikipedia. Using tokenization, the textual data was processed to identify common themes and patterns. The movies were then grouped into clusters to reveal inherent similarities. The analysis leveraged several Python libraries, including Numpy, Pandas, NLTK, ScikitLearn, Matplotlib, and Scipy, to perform data manipulation, natural language processing, clustering, and visualization. This clustering approach offers valuable insights into how movies relate to one another based on their narratives.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/movie_similarity_detection/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a>Book's Word Frequency Analysis with BeautifulSoup, Natural Language ToolKit (NLTK) and Counter.</a></h2>
-									</header>
-									<a class="image fit"><img src="images/thumbs/word_freq_in_book.JPG" alt="" /></a>
-									<p>The Data Science pipeline developed in this notebook enables visualization of word frequency distributions for any novel available on Project Gutenberg. Utilizing advanced natural language processing (NLP) tools, this pipeline can handle a wide range of textual data. Given that a significant proportion of the world's data is unstructured and text-heavy, the techniques applied here are broadly applicable to many data science tasks. This approach demonstrates the power of NLP in extracting meaningful insights from large volumes of text data, which is a common challenge faced by data scientists.</p>
-									<ul class="actions special">
-										<li><a href="https://sonamanukyan92.github.io/Word-Frequency-in-Classic-Novels/" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
-
-						<!-- Footer -->
-							<footer>
-								<div class="back-to-top">
-									<a href="#wrapper">Back to Top</a>
-								</div>
-							</footer>
-
-					</div>
-					
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Sona Manukyan</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+				</section>				
 
 			</div>
 
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
